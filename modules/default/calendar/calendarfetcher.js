@@ -400,7 +400,7 @@ const CalendarFetcher = function (url, reloadInterval, excludedEvents, maximumEn
 	function getBroadcastCommand(event_title, in_mins) {
 
 		return `{
-		  "command": " You have ${event_title} event starting in ${in_mins}",
+		  "command": " You have ${event_title} event starting in ${in_mins} minutes",
 		  "broadcast": true,
 		  "user": "techsudhagar@gmail.com" 
 		  }`;
