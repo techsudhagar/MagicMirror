@@ -135,7 +135,7 @@ const CalendarFetcher = function (url, reloadInterval, excludedEvents, maximumEn
 
 					var diffInMins = moment(startDate).diff(now,"minutes");
 
-					console.log(`Time diff.. ${diffInMins}`);
+					//console.log(`Time diff.. ${diffInMins}`);
 
 					notifyAssistant(title,diffInMins);
 
@@ -386,7 +386,11 @@ const CalendarFetcher = function (url, reloadInterval, excludedEvents, maximumEn
 
 
 	const notifyAssistant = function(event_title,diff_mins){
+	console.log(`Event Title..:${event_title},..:${diff_mins}:`);
+
 			if(calculateElapsedTime(diff_mins)) {
+
+				console.log("Event announcement..");
 
 				commandAssistant(getBroadcastCommand(event_title,diff_mins));
 			}
