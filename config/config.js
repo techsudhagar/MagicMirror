@@ -38,8 +38,8 @@ var config = {
 
 	modules: [
 		{
-			module: "alert",
-			position: "top_bar"
+			module: "alert"
+			
 		},
 		{
 			module: "updatenotification",
@@ -52,7 +52,7 @@ var config = {
 		{
 			module: "calendar",
 			header: "Sun Family Events",
-			position: "top_left",
+			position: "top_center",
 			config: {
 				calendars: [
 					{
@@ -85,8 +85,10 @@ var config = {
 				appid: "c231ec9741fc06b71bb81d5959f26db7",
 				units: "imperial"
 			}
-		},
-		{
+		}
+		
+		,
+		 {
 			module: "newsfeed",
 			position: "lower_third",
 			config: {
@@ -105,7 +107,7 @@ var config = {
 				broadcastNewsFeeds: true,
 				broadcastNewsUpdates: true
 			}
-		},
+		}, 
 	]
 };
 
