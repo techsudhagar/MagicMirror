@@ -133,16 +133,16 @@ const CalendarFetcher = function (url, reloadInterval, excludedEvents, maximumEn
 
 					const title = getTitleFromEvent(event);
 
-					var diffInMins = moment(startDate).diff(now,"minutes");
+					//var diffInMins = moment(startDate).diff(now,"minutes");
 
 					//console.log(`Time diff.. ${diffInMins}`);
 
-					notifyAssistant(title,diffInMins);
+					//notifyAssistant(title,diffInMins);
 
-					const momentConst = moment(startDate)
-					const hourConst = momentConst.hours();
-					const dateConst = momentConst.date();
-					const minutesConst = momentConst.minutes();
+					//const momentConst = moment(startDate)
+					//const hourConst = momentConst.hours();
+					//const dateConst = momentConst.date();
+					//const minutesConst = momentConst.minutes();
 					//console.log(`Calendar data..${hourConst} : ${dateConst} : ${minutesConst} at ${title}`);
 
 					let excluded = false,
