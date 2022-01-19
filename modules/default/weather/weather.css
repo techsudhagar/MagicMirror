@@ -1,6 +1,6 @@
 .weather .weathericon,
 .weather .fa-home {
-  font-size: 75%;
+  font-size: 100%;
   line-height: 65px;
   display: inline-block;
   transform: translate(0, -3px);
@@ -16,7 +16,7 @@
 
 .weather .day {
   padding-left: 0;
-  padding-right: 25px;
+  padding-right: 125px;
 }
 
 .weather .weather-icon {
